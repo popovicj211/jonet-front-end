@@ -1,0 +1,13 @@
+
+.slideshow-group{
+    width: 100%;
+}
+
+.slideshow-group .slideshow-block{
+    padding: 10px;
+    background-color: #000;
+}
+
+.slideshow-group .slideshow-block .btnSlide{
+padding: 12px;
+}

@@ -1,0 +1,46 @@
+#footer{
+    background-color:#1c2237;
+    width: 100%;
+    padding: 20px;
+}
+#footer .navbar-logo{
+    font-size: 3em;
+    opacity: 0.5;
+}
+#footer .footer-contact-name > .footer-icon{
+    color:  #006DF0;
+}
+#footer  h4 {
+    text-align: left;
+  color:  #006DF0;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+}
+.footer-navbar{
+   display: flex; 
+   flex-direction: column;
+   align-items: flex-start;
+}
+.footer-navbar a{
+padding: 0px 4px;
+}
+.footer-navbar a:hover{
+    border-left: 3px solid #006DF0;
+    /* color: #000;   */
+}
+.newsletter-btn-group{
+    width: 100%;
+}
+.bord-text-form{
+    width: 58%;
+}
+.black-outline-btn{
+    padding:4px 6px;
+    margin-top: -5px;
+}
+@media only screen and (max-width:800px) {
+    .bord-text-form{
+        width: 100%;
+        margin: 10px 0px;
+    }
+  }

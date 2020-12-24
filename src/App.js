@@ -1,25 +1,40 @@
-import logo from './logo.svg';
+import React, { Suspense, useEffect } from 'react';
+import {BrowserRouter as Router, Route, Switch, Redirect, withRouter } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import Home from './components/contains/home'
+import Services from './components/contains/services'
+import Layout from './layout/layout';
 
-function App() {
+
+const Logout = React.lazy(()=> {
+  return import('./components/auth/logout');
+});
+
+function App(){
+ /* useEffect( ()=>{
+    props.authAttempt();
+  }, [])*/
+
+  let routes = (
+    <Router>
+     <Switch>
+          <Route path="/" exact component={Home}/>
+          <Redirect to="/"/>
+          <Route path="/services" component={Services}/>
+    </Switch>
+  </Router>
+  );
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+    <Layout>
+        <Suspense fallback={<p>Loading...</p>}>{routes}</Suspense>
+    </Layout>
+       // <Layout/>
   );
 }
-
+//export default withRouter(App);
 export default App;
