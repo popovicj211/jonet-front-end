@@ -17,13 +17,10 @@ function App(){
   }, [])*/
 
   let routes = (
-    <Router>
      <Switch>
           <Route path="/" exact component={Home}/>
-          <Redirect to="/"/>
           <Route path="/services" component={Services}/>
     </Switch>
-  </Router>
   );
 
 
@@ -36,5 +33,5 @@ function App(){
        // <Layout/>
   );
 }
-//export default withRouter(App);
-export default App;
+export default withRouter(App);
+//export default App;

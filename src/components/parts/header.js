@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import {Container,Row , Col , Button } from 'react-bootstrap';
 import './header.css';
 import {Link, NavLink, BrowserRouter as Router } from 'react-router-dom';
-import { FaBars, FaTimes, FaSortUp, FaSortDown } from 'react-icons/fa';
+import { FaBars, FaTimes ,FaCaretDown , FaCaretUp } from 'react-icons/fa';
 import  useWindowDimensions from '../helps/getWindowDimensions';
 import { useSpring, Spring, animated, config } from "react-spring";
 import {Keyframes, Trail } from 'react-spring/renderprops';
@@ -26,6 +26,7 @@ const hideStateSignUp = ()  => setshowSignUp(true)
 
 
   const { height, width } = useWindowDimensions();
+
   let navBarClass = null;
   if(width <= 1000){
     navBarClass = true;
@@ -65,15 +66,15 @@ const users = [{ id:1 , name:"Pera"} ,{ id:2 , name:"Mika"} ]
 
 
     return(
-      <Router>
     <header id="header">
         <Container>
             <Row>
           
-            <animated.div style={pr}>I will fade in and out</animated.div>
+           
 
-            <Link to="/" className="navbar-logo">JONet</Link>
-             <Link to="#" className="menu-icon" onClick={onClickMenuIcon}>
+            <Link to="/" className="navbar-logo"> JoNet  <p>BROADBAND AND TELECOM</p></Link>
+            
+             <Link to="#" className="menu-icon" id="menu-icon-header" onClick={onClickMenuIcon}>
                                {click ? <FaTimes /> : <FaBars />}
              </Link>
                
@@ -86,7 +87,7 @@ const users = [{ id:1 , name:"Pera"} ,{ id:2 , name:"Mika"} ]
                         </li>                   
                          <li className="nav-service"  style={{height: showSubmenu ? '40px' : '190px'}}>                    
                          <NavLink to="/services"  className="nav-links"  > Services  </NavLink>
-                         <Link to="#"  className="submenu-show-icon" onClick={onClickSubMenu}>   {showSubmenu ? <FaSortDown /> : <FaSortUp />} </Link>  
+                         <Link to="#" id="submenu-icon-header" className="submenu-show-icon" onClick={onClickSubMenu}>   {showSubmenu ? <FaCaretDown /> : <FaCaretUp />} </Link>  
                                       <ul className="sub-service " id="sub-service" style={{display: showSubmenu ? 'none' : 'block'}} >
                                            <li><NavLink  to="/" >Tel</NavLink></li>
                                            <li> <NavLink  to="/"  >TV</NavLink></li>
@@ -117,7 +118,7 @@ const users = [{ id:1 , name:"Pera"} ,{ id:2 , name:"Mika"} ]
               
                 <li  className="nav-service">
                 <NavLink to="/services"  className="nav-links"  > Services  </NavLink>
-                                      <Link to="#"  className="submenu-show-icon" onClick={onClickSubMenu}>   {showSubmenu ? <FaSortDown /> : <FaSortUp />} </Link> 
+                                      <Link to="#" id="submenu-icon-header" className="submenu-show-icon" onClick={onClickSubMenu}>   {showSubmenu ?<FaCaretDown /> : <FaCaretUp />} </Link> 
                                         <ul className="sub-service " id="sub-service" style={{display: showSubmenu ? 'none' : 'block'}} >
                                            <li><NavLink  to="/" >Tel</NavLink></li>
                                            <li> <NavLink  to="/"  >TV</NavLink></li>
@@ -146,9 +147,7 @@ const users = [{ id:1 , name:"Pera"} ,{ id:2 , name:"Mika"} ]
            </Row>
         </Container>
     </header>
-   { /* <Conta state="showAndHide">{styles => <div  className="anm"  style={styles}>Hello</div>}</Conta> */}
-  
-    </Router> )
+   )
    }   
 
    export default Header

@@ -7,14 +7,13 @@ import {Link,NavLink, BrowserRouter as Router} from 'react-router-dom';
 const Footer = props => {
 
     return(
-   <Router>
     <footer id="footer">
     <Container>
         <Row>
-            <Col xs={6} md={4} lg={3}>
-                <Link to="/" className="navbar-logo">JONet</Link>
+            <Col xs={6} md={4} lg={3} className="mt-2">
+                <Link to="/" className="navbar-logo">JoNet</Link>
             </Col>
-            <Col xs={6} md={4} lg={3}>
+            <Col xs={6} md={4} lg={3} className="mt-2">
                 <nav className="footer-navbar">
                     <h4>Links </h4>
                      <NavLink to="/">Home</NavLink>
@@ -22,14 +21,14 @@ const Footer = props => {
                      <NavLink to="/contact">Contact</NavLink>
                 </nav>           
             </Col>
-            <Col xs={6} md={4} lg={3}>
+            <Col xs={6} md={4} lg={3} className="mt-2">
                   <h4>Contact </h4>
                   <p className="footer-contact-name"><FaMapMarker className="footer-icon"/> &nbsp; Zdravka Čelara 16</p>
                   <p className="footer-contact-name"><FaRegEnvelope  className="footer-icon"/> &nbsp; <Link to="#">jonet@gmail.com</Link></p>
                   <p className="footer-contact-name"> <FaPhoneAlt  className="footer-icon"/> &nbsp; +381 61 234 5678</p>
                   
             </Col>
-            <Col xs={6} md={4} lg={3}>
+            <Col xs={6} md={4} lg={3} className="mt-2">
                      <h4> Newsletter</h4>
                      <p>Subscribe to receive the latest news, events and updates.</p>
                      <div className="newsletter-btn-group">
@@ -49,7 +48,7 @@ const Footer = props => {
         </Row>
     </Container>
 </footer>
-</Router>
+
 );
 }
 

@@ -28,5 +28,5 @@ const layout = props => {
 };
 
 
-//export default withRouter(layout);
-export default layout;
+export default withRouter(layout);
+//export default layout;

@@ -38,8 +38,9 @@
     }
    
     .navbar-logo{
-      font-size: 1.5em;
-      padding: 17px;
+      font-size: 1.8em;
+      padding: 5px;
+    /*  padding: 2px;*/
     }
     .menu-icon, .submenu-show-icon  {
       display: block;
@@ -50,7 +51,22 @@
       z-index: 1015;
       position: absolute;
     }
-
+   /*  .user-icon{
+      color: #006DF0;
+      font-size: 20px;
+     }*/
+   .upload-icon{
+     font-size: 60px;
+     color: #006DF0;
+    text-align: center;
+    cursor: pointer;
+   }
+.showPhoto-signup{
+  width: 200px;
+}
+.showPhoto-signup img{
+  width: 100%;
+}
     .menu-icon{
       transform: translate(-100%, 40%);
       font-size: 1.8rem;
@@ -73,6 +89,7 @@
       border-top: 3px solid #006DF0;
       border-bottom: 3px solid #006DF0;
       background-color: rgba(0, 0, 0, 1);
+      z-index: 1021;
    }
    .navbar > #nav-links-group > li  .sub-service  li{
     padding: 7px 25px;
@@ -147,6 +164,10 @@
         transform: translate(-100%, -15%);
         font-size: 1.5rem;
       }
+
+    /*  .modal-signup-signin {
+        height: 1200px;
+    }*/
 
     }
     
@@ -256,5 +277,6 @@
     #signin-btn-linkmenu, #signup-btn-linkmenu {
         transition: all .5s ease;
     }
-
-   
+#uploadPhoto-signup-group{
+  width: 35%;
+}

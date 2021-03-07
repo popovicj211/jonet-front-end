@@ -69,7 +69,7 @@ h1,h2,h3,h4,h5{
   letter-spacing: 1px;
 }
 
-.btns , .bord-text-form ,  .modal-signup-signin , .btnSlide , .btnt , .btnh
+.btns , .bord-text-form ,  .modal-signup-signin , .btnSlide , .btnt , .btnh , .awssld__content > div > .slideshow-group 
 {
   border-radius:5px;
   -webkit-border-radius:5px;
@@ -224,8 +224,4 @@ h1,h2,h3,h4,h5{
   display: flex;
   flex-direction: column;
    flex-wrap:nowrap;
-}
-#slideshow{
-  padding: 20px;
-  background-color: blue;
 }
