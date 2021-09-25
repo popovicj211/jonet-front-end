@@ -1,0 +1,43 @@
+{
+    "id" : 1,
+     "name": "Easy Surfing" , 
+      "icons" :{
+            "satellite" : false,
+            "wifi" : true,
+            "phone" : false
+      },
+      "image" :{
+         "path" : "bg-pattern3.png",
+         "alt" : ""
+      },
+     "type": "Internet", 
+     "desc": ["Up to 50Mbps", " Night Turbo-Speed", " WiFi router" , "Unlimited devices"], 
+       "variations" : [
+          {
+             "id" : 1 , 
+             "name" : "Net 100/10 Mb/s",
+              "price" : {
+                   "regular" : 10.00,
+                   "new" : 9.00
+
+              }
+          },
+          {
+             "id" : 2 , 
+             "name" : "Net 500/100 Mb/s",
+             "price" : {
+                "regular" : 18.00,
+                "new" : 14.40
+           }
+          },
+          {
+             "id" : 3 , 
+             "name" : "Net 1000/200 Mb/s",
+             "price" : {
+                "regular" : 24.00,
+                "new" : 0
+           }
+          }
+    ],
+     "popular" : false
+}

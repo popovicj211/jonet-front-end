@@ -1,0 +1,232 @@
+header {
+   // background: $header_footer;
+    z-index: 999;
+    height: 80px;
+    position: relative;
+    .navbar-logo {
+        font-size: 2.3em;
+        padding: 15px;
+        p{
+            color: rgba($primary, 0.8 );
+            padding: 0 15px;
+        }
+    }
+    .menu-icon {
+        transform: translate(-100%, 40%);
+        font-size: 1.8rem;
+    }
+    .menu-icon,
+    .submenu-show-icon {
+        display: block;
+       top: 0;
+        right: 0;
+        cursor: pointer;
+        color: $primary;
+        z-index: 1015;
+        position: absolute;
+        border: none;
+        background-color: transparent;   
+        outline:none;
+    }
+    .submenu-show-icon {
+        transform: translate(90%, 10%);
+        font-size: 1.2rem;
+    }
+    .navbar {
+  height: 80px;
+  padding: 0 !important;
+        .nav-links-group {
+            width: 100%;
+            margin-right: 0 auto;
+     @include flex( row, space-between, center, flex, nowrap);
+            .nav-service {
+                position: relative;
+            }
+            li {
+                @include flex( column, flex-start, flex-start, flex, nowrap);
+                .nav-links {
+                    color: $white;
+                    padding: 7px 2px;
+                    &:hover {
+                      //  border-bottom: 3px solid $primary;
+                      color: $primary;
+                      //  transform: scale(1.2);
+                       // transition: all 0.3s ease;
+                    }
+                  /*  &.active {
+                        border-bottom: 3px solid $primary;
+                    }*/
+                }
+                .sub-service {
+                    position: absolute;
+                    left: 0;
+                    top: 38px;
+                    width: 170px;
+                    border-top: 3px solid $primary;
+                    border-bottom: 3px solid $primary;
+                   background-color: rgba($black, 1);
+                    z-index: 1021;
+                    padding: 0;
+                    li {
+                        padding: 7px 20px;
+                        &:hover {
+                            background-color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*
+.upload-icon {
+    font-size: 60px;
+    color: #006DF0;
+    text-align: center;
+    cursor: pointer;
+}*/
+
+
+/*
+.showPhoto-signup {
+    width: 200px;
+}
+
+.showPhoto-signup img {
+    width: 100%;
+}
+*/
+
+@media only screen and (min-width: 1000px) {
+    header .menu-icon {
+        display: none;
+    }
+    header .modal-signup-signin>.menu-icon {
+        display: block;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .menu-icon {
+       display: block;
+    //   position: absolute;
+     //  top: 0;
+     //  right: 0;
+    }
+    header {
+        .nav-sidebar {
+             width: 100%;
+             height: 100vh;
+           position: fixed;
+            top: 0;
+            right: 0;
+            background-color: $bg;
+            z-index: 1010;
+            .nav-sidebar-logo {
+                padding: 15px 0 0 25px;
+            }
+            .nav-links-group{
+          
+                li{
+                    position: relative;
+                    .nav-links{
+                        color: $primary;
+                        background-color: rgba($black, 0.3);
+                        border-bottom: 3px solid $primary;
+                        border-top: none;
+                        &:hover {
+                            color: $primary !important;
+                        }
+                    }
+                    .sub-service {
+                        @include flex( column, flex-start, flex-start, flex, nowrap);
+                        position: absolute;
+                        left: 0;
+                        top: 60px;
+                        padding: 0 25px;
+                        li{
+                            padding: 5px 0;
+                        }
+                    }
+                }
+         
+            .btn-trans {
+                top: 20px;
+                left: 5px;
+                width: 97%;
+                border: 2px solid $white;
+                a {
+                    justify-content: center;
+                }
+            }
+        }
+           /* .nav-links-group {
+                li {
+                    position: relative;
+
+                    height: 43px;
+                         position: relative;
+                    &:nth-child(1) {
+                        margin-top: 100px;
+                    }
+                    .nav-links {
+                        padding: 5px 7px;
+                        background-color: rgba($black, 0.3);
+                        border-bottom: 3px solid $primary;
+                        &:hover {
+                            color: $primary;
+                        }
+                    }
+                    .sub-service {
+                        @include flex( column, flex-start, flex-start, flex, nowrap);
+                        position: absolute;
+                        left: 0;
+                        top: -50px;
+                        padding: 0px 25px;
+                        li>a:hover {
+                            color: $primary;
+                        }
+                    }
+                    .sub-service>li>a:hover {
+                        color: $primary;
+                    }
+                }
+            }*/
+  
+        }
+    }
+    .submenu-show-icon {
+     //   transform: translate(-100%, -15%);
+     transform: translate(-50%, 10%) !important;
+     font-size: 1.7rem !important;
+    }
+}
+
+@import './modalsign';
+
+/*
+#uploadPhoto-signup-group {
+    width: 35%;
+}*/
+
+
+.active-menu{
+    color: $primary;
+    border-bottom: 3px solid $primary;
+}
+
+
+.menu-icon-res {
+    display: block;
+   top: 0;
+    right: 0;
+    cursor: pointer;
+    color: $primary;
+    z-index: 1015;
+    position: absolute;
+    border: none;
+    background-color: transparent;   
+    outline:none;
+}

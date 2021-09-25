@@ -1,14 +1,14 @@
-.anm{
-  background-color: red;
+.anm {
+    background-color: red;
 }
 
+
+/*
 #header{
     background: #1c2237;
     width: 100%;
     height: 80px;
     font-size: 1.2rem;
-  /*  position: sticky;
-    top: 0;*/
     z-index: 999;
     }
     .navbar {
@@ -40,7 +40,6 @@
     .navbar-logo{
       font-size: 1.8em;
       padding: 5px;
-    /*  padding: 2px;*/
     }
     .menu-icon, .submenu-show-icon  {
       display: block;
@@ -51,10 +50,7 @@
       z-index: 1015;
       position: absolute;
     }
-   /*  .user-icon{
-      color: #006DF0;
-      font-size: 20px;
-     }*/
+
    .upload-icon{
      font-size: 60px;
      color: #006DF0;
@@ -97,15 +93,7 @@
    .navbar > #nav-links-group > li  .sub-service  li:hover{
     background-color: #006DF0;
    }
-   /*
-   .modal-signup-signin{
-     position: absolute;
-        width: 50%;
-        height: 300px;
-        background-color: rgba(255, 0, 0, 0.9);
-       transform: translate(50%,50%);
-       padding: 25px;
-   }*/
+
 
     @media only screen and (min-width: 1000px) {
       #header .menu-icon{
@@ -165,9 +153,6 @@
         font-size: 1.5rem;
       }
 
-    /*  .modal-signup-signin {
-        height: 1200px;
-    }*/
 
     }
     
@@ -175,8 +160,6 @@
 
     .modal-signup-signin {
       position: relative;
-     /* height: 800px;*/
-    /*  width: 500px;*/
       margin-left: auto;
       margin-right: auto;
       padding:0 2em;
@@ -237,21 +220,7 @@
     .signup-signin-form-group label {
       text-transform: uppercase;
     }
-   /* .signup-signin-form-group button {
-        font-weight: 700;
-        text-transform: uppercase;
-        font-size: 1em;
-        text-align: center;
-        color: rgba(255,255,255, 1);
-        padding: 4px 0px;
-        width: 100%;
-        height: 35px;
-        border: none;
-        border-radius: 20px;
-        margin-top: 23px;
-        background-color: #006DF0;
-    
-    }*/
+
     .signup-signin-form-group button{
       width: 100%;
       border: 2px solid #fff;
@@ -280,3 +249,5 @@
 #uploadPhoto-signup-group{
   width: 35%;
 }
+
+*/

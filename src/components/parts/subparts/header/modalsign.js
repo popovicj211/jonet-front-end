@@ -5,7 +5,9 @@ import {Link,  BrowserRouter as Router } from 'react-router-dom';
 import SignInForm from './signin';
 import SignUpForm from './signup';
 
-  const SignModal = props =>{
+
+  const SignModal = ({hideSignUp}) =>{
+
 
     const [registrationFormStatus, setRegistartionFormStatus] = useState(false);
     const signinProps = useSpring({ 
@@ -16,8 +18,8 @@ import SignUpForm from './signup';
     });
 
     const formHeightProps = useSpring({
-        height: registrationFormStatus ? "800px" : "450px", 
-        width: registrationFormStatus ? "1000px" : "500px"
+        height: registrationFormStatus ? "900px" : "550px", 
+        width: registrationFormStatus ? "500px" : "500px"
       });
   
     const signinBtnProps = useSpring({
@@ -40,7 +42,7 @@ import SignUpForm from './signup';
 
     return(
         <animated.div className="modal-signup-signin" style={formHeightProps} >
-        <Link to="#" className="menu-icon" onClick={props.hideSignUp}>
+        <Link to="#" className="menu-icon" onClick={hideSignUp}>
                      <FaTimes /> 
         </Link>
         <div className="linkmenu-buttons">
@@ -53,10 +55,10 @@ import SignUpForm from './signup';
                  </animated.button>
         </div>
         <div className="signup-signin-form-group">
-                <animated.form action="" id="signinform" style={signinProps}>
+                <animated.form  id="signinform" style={signinProps}>
                          <SignInForm/>
                </animated.form>
-               <animated.form action="" id="signupform" style={signupProps}>
+               <animated.form  id="signupform" style={signupProps}>
                          <SignUpForm/>
                </animated.form>
         </div>

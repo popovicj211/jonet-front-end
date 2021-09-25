@@ -1,0 +1,237 @@
+[
+    {
+         "id" : 1,
+          "name": "Easy Surfing" , 
+           "icons" :{
+                 "satellite" : false,
+                 "wifi" : true,
+                 "phone" : false
+           },
+           "image" :{
+              "path" : "",
+              "alt" : ""
+           },
+          "type": "Internet", 
+          "desc": ["Up to 50Mbps", " Night Turbo-Speed", " WiFi router" , "Unlimited devices"], 
+            "variations" : [
+               {
+                  "id" : 1 , 
+                  "name" : "Net 100/10 Mb/s",
+                   "price" : {
+                        "regular" : 10.00,
+                        "new" : 9.00,
+                        "sale" : 10,
+                        "superprice" : false
+                   }
+               },
+               {
+                  "id" : 2 , 
+                  "name" : "Net 500/100 Mb/s",
+                  "price" : {
+                     "regular" : 18.00,
+                     "new" : 16.20,
+                     "sale" : 10,
+                     "superprice" : false
+                }
+               },
+               {
+                  "id" : 3 , 
+                  "name" : "Net 1000/200 Mb/s",
+                  "price" : {
+                     "regular" : 24.00,
+                     "new" : 21.60,
+                     "sale" : 10,
+                     "superprice" : true
+                }
+               }
+         ],
+          "popular" : false
+    },
+    {
+        "id" : 2,
+         "name": "Impression" , 
+         "icons" : {
+            "satellite" : true,
+            "wifi" : false,
+            "phone" : false
+          },
+          "image" :{
+            "path" : "",
+            "alt" : ""
+         },
+         "type": "TV", 
+         "desc": ["200+ channels", "3 channels 4K Ultra HD", "TV-Box" ], 
+         "variations" : [
+               {
+                  "id" : 1 , 
+                  "name" : "Sport package",
+                   "price" : {
+                     "regular" : 23.00,
+                     "new" : 4.50,
+                     "sale" : 10,
+                     "superprice" : false
+                }
+               },
+               {
+                  "id" : 2 , 
+                  "name" : "Movies package",
+                  "price" : {
+                     "regular" : 25.00,
+                     "new" : 6.30,
+                     "sale" : 10,
+                     "superprice" : true
+                }
+               }
+         ],
+         "popular" : false
+   },
+   {
+    "id" : 3,
+     "name": "Home Comfort" ,
+     "icons" : {
+        "satellite" : true,
+        "wifi" : true,
+        "phone" : false
+       }, 
+       "image" :{
+           "path" : "",
+           "alt" : ""
+       },
+     "type": "Internet + TV", 
+     "desc": ["Up to 100Mbps", "200+ channels", " WiFi router" , "Unlimited devices"], 
+     "variations" : [
+      {
+         "id" : 1 , 
+         "name" : "Net 100/10 Mb/s + Sport package",
+          "price" : {
+            "regular" : 23.00,
+            "new" : 4.50,
+            "sale" : 10,
+            "superprice" : false
+       }
+      },
+      {
+         "id" : 2 , 
+         "name" : "Net 500/100 Mb/s + Sport package",
+          "price" : {
+            "regular" : 23.00,
+            "new" : 4.50,
+            "sale" : 10,
+            "superprice" : false
+       }
+      },
+      {
+         "id" : 3 , 
+         "name" : "Net 1000/200 Mb/s + Sport package",
+          "price" : {
+            "regular" : 23.00,
+            "new" : 4.50,
+            "sale" : 10,
+            "superprice" : false
+       }
+      },
+      {
+         "id" : 4 , 
+         "name" : "Net 100/10 Mb/s + Movies package",
+         "price" : {
+            "regular" : 25.00,
+            "new" : 6.30,
+            "sale" : 10,
+            "superprice" : false
+       }
+      },
+      {
+         "id" : 5 , 
+         "name" : "Net 500/100 Mb/s + Movies package",
+         "price" : {
+            "regular" : 25.00,
+            "new" : 6.30,
+            "sale" : 10
+       }
+      },
+      {
+         "id" : 6 , 
+         "name" : "Net 1000/200 Mb/s + Movies package",
+         "price" : {
+            "regular" : 25.00,
+            "new" : 6.30,
+            "sale" : 10
+       }
+      }
+],
+     "popular" : true
+  },
+  {
+    "id" : 4,
+     "name": "Premium Plan" , 
+     "icons" : {
+        "satellite" : true,
+        "wifi" : true,
+        "phone" : true
+       }, 
+       "image" :{
+         "path" : "",
+         "alt" : ""
+       },
+     "type": "Internet + TV + Phone", 
+     "desc": ["Up to 1000Mbps", "250+ channels", "WiFi router & TV" , "Phone"], 
+
+"variations" : [
+   {
+      "id" : 1 , 
+      "name" : "Net 100/10 Mb/s + Sport package + Phone",
+       "price" : {
+         "regular" : 38.00,
+         "new" : 34.20,
+         "sale" : 10
+    }
+   },
+   {
+      "id" : 2 , 
+      "name" : "Net 500/100 Mb/s + Sport package + Phone",
+       "price" : {
+         "regular" : 46.00,
+         "new" : 41.40,
+         "sale" : 10
+    }
+   },
+   {
+      "id" : 3 , 
+      "name" : "Net 1000/200 Mb/s + Sport package + Phone",
+       "price" : {
+         "regular" : 52.00,
+         "new" : 46.80,
+         "sale" : 10
+    }
+   },
+   {
+      "id" : 4 , 
+      "name" : "Net 100/10 Mb/s + Movies package + Phone",
+      "price" : {
+         "regular" : 40.00,
+         "new" : 36.00,
+         "sale" : 10
+    }
+   },
+   {
+      "id" : 5 , 
+      "name" : "Net 500/100 Mb/s + Movies package + Phone",
+      "price" : {
+         "regular" : 48.00,
+         "new" : 43.20,
+         "sale" : 10
+    }
+   },
+   {
+      "id" : 6 , 
+      "name" : "Net 1000/200 Mb/s + Movies package + Phone",
+      "price" : {
+         "regular" : 54.00,
+         "new" : 48.60,
+         "sale" : 10
+    }
+   }
+],
+     "popular" : false
+  }
+]

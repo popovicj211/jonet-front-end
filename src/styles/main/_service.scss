@@ -1,0 +1,55 @@
+&.service{
+//    background-color: rgba($bg, 1);
+ .service-details{
+     position: relative;
+     overflow: hidden;
+     .sale{
+         position: absolute;
+         background-color: rgba($primary,0.9);
+        // padding: 20px;
+        // height: 20px;
+       //  width: 100%;
+         @include border-radius(50%);
+         color: $white;
+         text-align: center;
+         text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
+         transform: rotate(-45deg);
+         -webkit-transform: rotate(-45deg);
+         -moz-transform: rotate(-45deg);
+         -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+         padding: 30px;
+         left: -15px;
+         top: -15px;
+         text-align: center;
+     }
+     img{
+         height: 100%;
+     }
+    ul li {
+        color: $white;
+    }
+
+    h3{
+        color: $secondary;
+    }
+    h4{
+        text-transform: capitalize;
+        color:rgba(255, 0, 255, 0.5);
+    }
+    .service-details-prices{
+        padding: 0 0 30px 0;
+              span{
+                color: $primary;
+                font-size: 20px;
+                &:first-child{
+                    padding-right: 20px;
+                    }
+             }
+    }
+   }
+   .service-details-first{
+       padding-left: 0;
+   }
+}
+

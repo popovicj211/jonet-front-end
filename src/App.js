@@ -1,11 +1,10 @@
-import React, { Suspense, useEffect } from 'react';
+import React, { Suspense } from 'react';
 import {BrowserRouter as Router, Route, Switch, Redirect, withRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
-import Home from './components/contains/home'
-import Services from './components/contains/services'
+import Home from './components/contains/home/home';
+import Service from './components/contains/service/service';
 import Layout from './layout/layout';
-
+import './App.css';
 
 const Logout = React.lazy(()=> {
   return import('./components/auth/logout');
@@ -18,8 +17,8 @@ function App(){
 
   let routes = (
      <Switch>
-          <Route path="/" exact component={Home}/>
-          <Route path="/services" component={Services}/>
+          <Route exact path="/" component={Home} />
+          <Route path="/service/:id"  component={Service}/>
     </Switch>
   );
 

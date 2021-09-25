@@ -1,0 +1,21 @@
+&.contact {
+    border-top: 3px solid $secondary;
+    #contact-form input[type='text'],#contact-form textarea,#contact-form select {
+     width: 100%;
+     padding: 5px 25px 5px 5px;
+     border: none;
+     background: transparent;
+     border-bottom: 2px solid rgba(13, 86, 217, 1);
+     color: rgba($secondary, 1);
+   }
+
+    #contact-form input[type='text']::placeholder, #contact-form textarea::placeholder {
+        color: rgba($secondary, 1);
+   }
+
+   #contact-form input[type='text']:focus,
+     #contact-form textarea:focus {
+          outline: none;
+    }
+
+}

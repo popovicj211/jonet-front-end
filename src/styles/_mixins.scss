@@ -1,0 +1,66 @@
+
+@mixin heading($weight, $size, $spac:normal ) {
+   // font: $weight $size Roboto, Helvetica Neue, sans-serif;
+   font-weight: $weight;
+   font-size: $size;
+    letter-spacing:  $spac;
+    margin: 0 0 16px;
+  }
+
+  @mixin  heading-section($size) {
+    position: relative;
+    font-size: $size;
+    padding: 5px 0;
+  }
+
+  @mixin heading-after($colorFrom , $colorTo) {
+    content: "";
+    width: 50px;
+    height: 4px;
+    left: 50%;
+    bottom: 0%;
+    margin: 0 0 0 -25px;
+    position: absolute;
+    z-index: 9;
+    background: linear-gradient(90deg, $colorFrom 50%, $colorTo 0);
+  }
+  
+  @mixin button($padding, $color, $hover) {
+    box-sizing: border-box;
+    padding: $padding $padding * 2.5;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    display: inline-block;
+    transform: skew(-15deg);  
+    border: 1px solid $color;
+    color: $color;
+    transition: .2s linear;
+    &:hover {
+      color: $hover;
+      border-color:$hover;    
+    }
+    > span {
+      display: inline-block;
+      transform: skew(15deg);  
+    }
+  }
+  
+  @mixin transitionElastic($prop) {
+    transition: $prop .2s cubic-bezier(1, 0.43, 0.35, 1.14);
+  }
+
+
+  @mixin flex( $direction, $justify, $align, $type:flex, $wrap:wrap){
+    display:$type;
+    flex-direction: $direction;
+    justify-content: $justify;
+    flex-wrap:$wrap;
+    align-items: $align;
+  }
+  
+  @mixin border-radius($radius) {
+    border-radius:$radius;
+    -webkit-border-radius:$radius;
+    -moz-border-radius:$radius;
+  }
+  

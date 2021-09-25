@@ -23,10 +23,11 @@ function Slideshow() {
       cancelOnInteraction={false} 
       interval={8000}
     >
+      
   
     { 
         arrimg.map((value , index) => {
-            return  <div  key={value.id}  style={{background: 'url('+value.img+') no-repeat center center / cover' }} > 
+            return  <div  key={value.id}  style={{background: 'linear-gradient(0deg, rgba(0, 0, 255,0.6), rgba(0, 0, 0,0.7)), url('+value.img+') no-repeat center right / cover fixed' }} > 
                  <div className="slideshow-group">
                         <h1>{value.title}</h1>
                         <p className="slidershow-caption">{value.caption}

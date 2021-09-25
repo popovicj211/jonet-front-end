@@ -24,6 +24,9 @@
 .footer-navbar a{
 padding: 0px 4px;
 }
+#footer p{
+    color: #fff;
+    }
 .footer-navbar a:hover{
     border-left: 3px solid #006DF0;
     /* color: #000;   */
